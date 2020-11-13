@@ -53,7 +53,7 @@
     "components": [
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-a2c8c34d63cb8df4db2a785f2f82875c",
+            "id": "component-AppComponent-85b06ef848d9dd15b448aef498351350",
             "file": "apps/vtr/src/app/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -73,6 +73,14 @@
             "outputsClass": [],
             "propertiesClass": [
                 {
+                    "name": "counter",
+                    "defaultValue": "'0'",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 10
+                },
+                {
                     "name": "title",
                     "defaultValue": "'vtr'",
                     "type": "string",
@@ -87,7 +95,7 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'lla-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss'],\n})\nexport class AppComponent {\n  title = 'vtr';\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'lla-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss'],\n})\nexport class AppComponent {\n  title = 'vtr';\n  counter = '0';\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -96,7 +104,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<header class=\"flex\">\n  <img\n    alt=\"Nx logo\"\n    width=\"75\"\n    src=\"https://nx.dev/assets/images/nx-logo-white.svg\"\n  />\n  <h1>Welcome to {{ title }}!</h1>\n</header>\n<main>\n  <h2>Resources &amp; Tools</h2>\n  <p>\n    Thank you for using and showing some ♥ for Nx.\n  </p>\n  <div class=\"flex github-star-container\">\n    <a\n      href=\"https://github.com/nrwl/nx\"\n      target=\"_blank\"\n      rel=\"noopener noreferrer\"\n    >\n      If you like Nx, please give it a star:\n      <div class=\"github-star-badge\">\n        <svg\n          class=\"material-icons\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          width=\"24\"\n          height=\"24\"\n          viewBox=\"0 0 24 24\"\n        >\n          <path d=\"M0 0h24v24H0z\" fill=\"none\" />\n          <path\n            d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"\n          />\n        </svg>\n        Star\n      </div>\n    </a>\n  </div>\n  <p>\n    Here are some links to help you get started.\n  </p>\n  <ul class=\"resources\">\n    <li class=\"col-span-2\">\n      <a\n        class=\"resource flex\"\n        href=\"https://connect.nrwl.io/app/courses/nx-workspaces/intro\"\n      >\n        Nx video course\n      </a>\n    </li>\n    <li class=\"col-span-2\">\n      <a\n        class=\"resource flex\"\n        href=\"https://nx.dev/angular/getting-started/what-is-nx\"\n      >\n        Nx video tutorial\n      </a>\n    </li>\n    <li class=\"col-span-2\">\n      <a\n        class=\"resource flex\"\n        href=\"https://nx.dev/angular/tutorial/01-create-application\"\n      >\n        Interactive tutorial\n      </a>\n    </li>\n    <li class=\"col-span-2\">\n      <a class=\"resource flex\" href=\"https://nx.app/\">\n        <svg\n          width=\"36\"\n          height=\"36\"\n          viewBox=\"0 0 120 120\"\n          fill=\"none\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n        >\n          <path\n            d=\"M120 15V30C103.44 30 90 43.44 90 60C90 76.56 76.56 90 60 90C43.44 90 30 103.44 30 120H15C6.72 120 0 113.28 0 105V15C0 6.72 6.72 0 15 0H105C113.28 0 120 6.72 120 15Z\"\n            fill=\"#0E2039\"\n          />\n          <path\n            d=\"M120 30V105C120 113.28 113.28 120 105 120H30C30 103.44 43.44 90 60 90C76.56 90 90 76.56 90 60C90 43.44 103.44 30 120 30Z\"\n            fill=\"white\"\n          />\n        </svg>\n        <span class=\"gutter-left\">Nx Cloud</span>\n      </a>\n    </li>\n  </ul>\n  <h2>Next Steps</h2>\n  <p>Here are some things you can do with Nx.</p>\n  <details open>\n    <summary>Add UI library</summary>\n    <pre>\n# Generate UI lib\nng g @nrwl/angular:lib ui\n\n# Add a component\nng g @nrwl/angular:component xyz --project ui</pre\n    >\n  </details>\n  <details>\n    <summary>View dependency graph</summary>\n    <pre>nx dep-graph</pre>\n  </details>\n  <details>\n    <summary>Run affected commands</summary>\n    <pre>\n# see what's been affected by changes\nng affected:dep-graph\n\n# run tests for current changes\nng affected:test\n\n# run e2e tests for current changes\nng affected:e2e\n</pre\n    >\n  </details>\n</main>\n"
+            "templateData": "<header class=\"flex\">\n  <img\n    alt=\"Nx logo\"\n    width=\"75\"\n    src=\"https://nx.dev/assets/images/nx-logo-white.svg\"\n  />\n  <h1>Welcome to {{ title }}!</h1>\n</header>\n<main>\n  <h2>Resources &amp; Tools</h2>\n  <p class=\"counter\">Number: 0​​​​​​​</p>\n  <p>\n    Thank you for using and showing some ♥ for Nx.\n  </p>\n  <div class=\"flex github-star-container\">\n    <a\n      href=\"https://github.com/nrwl/nx\"\n      target=\"_blank\"\n      rel=\"noopener noreferrer\"\n    >\n      If you like Nx, please give it a star:\n      <div class=\"github-star-badge\">\n        <svg\n          class=\"material-icons\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          width=\"24\"\n          height=\"24\"\n          viewBox=\"0 0 24 24\"\n        >\n          <path d=\"M0 0h24v24H0z\" fill=\"none\" />\n          <path\n            d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"\n          />\n        </svg>\n        Star\n      </div>\n    </a>\n  </div>\n  <p>\n    Here are some links to help you get started.\n  </p>\n  <ul class=\"resources\">\n    <li class=\"col-span-2\">\n      <a\n        class=\"resource flex\"\n        href=\"https://connect.nrwl.io/app/courses/nx-workspaces/intro\"\n      >\n        Nx video course\n      </a>\n    </li>\n    <li class=\"col-span-2\">\n      <a\n        class=\"resource flex\"\n        href=\"https://nx.dev/angular/getting-started/what-is-nx\"\n      >\n        Nx video tutorial\n      </a>\n    </li>\n    <li class=\"col-span-2\">\n      <a\n        class=\"resource flex\"\n        href=\"https://nx.dev/angular/tutorial/01-create-application\"\n      >\n        Interactive tutorial\n      </a>\n    </li>\n    <li class=\"col-span-2\">\n      <a class=\"resource flex\" href=\"https://nx.app/\">\n        <svg\n          width=\"36\"\n          height=\"36\"\n          viewBox=\"0 0 120 120\"\n          fill=\"none\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n        >\n          <path\n            d=\"M120 15V30C103.44 30 90 43.44 90 60C90 76.56 76.56 90 60 90C43.44 90 30 103.44 30 120H15C6.72 120 0 113.28 0 105V15C0 6.72 6.72 0 15 0H105C113.28 0 120 6.72 120 15Z\"\n            fill=\"#0E2039\"\n          />\n          <path\n            d=\"M120 30V105C120 113.28 113.28 120 105 120H30C30 103.44 43.44 90 60 90C76.56 90 90 76.56 90 60C90 43.44 103.44 30 120 30Z\"\n            fill=\"white\"\n          />\n        </svg>\n        <span class=\"gutter-left\">Nx Cloud</span>\n      </a>\n    </li>\n  </ul>\n  <h2>Next Steps</h2>\n  <p>Here are some things you can do with Nx.</p>\n  <details open>\n    <summary>Add UI library</summary>\n    <pre>\n# Generate UI lib\nng g @nrwl/angular:lib ui\n\n# Add a component\nng g @nrwl/angular:component xyz --project ui</pre>\n  </details>\n  <details>\n    <summary>View dependency graph</summary>\n    <pre>nx dep-graph</pre>\n  </details>\n  <details>\n    <summary>Run affected commands</summary>\n    <pre>\n# see what's been affected by changes\nng affected:dep-graph\n\n# run tests for current changes\nng affected:test\n\n# run e2e tests for current changes\nng affected:e2e\n    </pre>\n  </details>\n</main>\n"
         },
         {
             "name": "ButtonsComponent",
@@ -856,7 +864,7 @@
                 "linktype": "component",
                 "name": "AppComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/2",
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {
